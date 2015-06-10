@@ -4,6 +4,11 @@
 
 set -gx PAGER 'most'
 set -gx EDITOR 'vim'
+
 set -gx SSH_AUTH_SOCK "$XDG_RUNTIME_DIR/ssh-agent.socket"
-set -gx PATH /home/solarce/.gem/ruby/2.2.0/bin /home/solarce/.local/bin $PATH
+
+set -gx GOROOT /usr/lib/go
+set -gx GOPATH $HOME/code/go
+
+set -gx PATH $GOPATH/bin $HOME/.gem/ruby/2.2.0/bin $HOME/.local/bin $PATH
 
